@@ -1,3 +1,9 @@
+#importamos la herramienta a usar
+from ortools.linear_solver import pywraplp
+
+#Creamos el solucionador del problema en cuestión
+solucionador = pywraplp.Solver("Maximizar la fuerza de los guerreros", pywraplp.Solver.GLOP_LINEAR_PROGRAMMING)
+
 #variables a optimizar
 espadachines = solver.IntVar(0, solver.infinity(),"espadachines")
 jinetes = solver.IntVar(0, solver.infinity(),"jinetes")
