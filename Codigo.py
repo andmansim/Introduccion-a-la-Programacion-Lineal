@@ -22,7 +22,7 @@ estado = solucionador.Solve()
 
 if estado == pywraplp.Solver.OPTIMAL:
     print("********************************************************")
-    print(f'Resuelto en {solucionador.wall_time():.2f}milisegundos en {solucionador.iterations()}iteraciones')
+    print(f'Resuelto en {solucionador.wall_time():.2f} milisegundos en {solucionador.iterations()} iteraciones')
     print(f'Hemos optenido {solucionador.Objective().Value()} poder')
     print(f'Espadachines = {espadachines.solution_value()}')
     print(f'Arqueros = {arqueros.solution_value()}')
